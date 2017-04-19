@@ -1,7 +1,7 @@
 # CricLiveNotifier
 
 Mac User can download the zip file which has standalone app. To run the app download it and run it via terminal: <br /><br />
-./CricLiveNotifier.app/Contents/MacOS/CricLiveNotifier <br /><br />
+./CricketNotifier.app/Contents/MacOS/CricketNotifier <br /><br />
 
 
 NOTE: The standalone app should run without installing any dependencies.
