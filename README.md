@@ -4,6 +4,9 @@ Mac User can download the zip file which has standalone app. To run the app down
 ./CricLiveNotifier.app/Contents/MacOS/CricLiveNotifier <br /><br />
 
 
+NOTE: The standalone app should run without installing any dependencies.
+
+
 Live Cricket Score Notification for MAC OS users<br /><br />
 ![img](http://i.imgur.com/5CzGRdh.png)<br />
 ![img](http://i.imgur.com/X0SZxLa.png)<br />
