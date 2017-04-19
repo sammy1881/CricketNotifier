@@ -42,7 +42,7 @@ $ python CricLiveNotifier.py stop
 The MIT License (MIT)
 
 # Bug Report:
-Issue it here: https://github.com/hasgar/CricLiveNotifier/issues
+Issue it here: https://github.com/sammy1881/CricLiveNotifier/issues
 
   [Beautiful Soup]: <http://www.crummy.com/software/BeautifulSoup/bs4/doc/>
   [lxml]: <http://lxml.de/>
