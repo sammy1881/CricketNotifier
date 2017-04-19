@@ -6,7 +6,8 @@ import getpass
 import os
 from crontab import CronTab
 from bs4 import BeautifulSoup
-import urllib2
+import urllib2,cookielib
+from urllib2 import urlopen
 from xml.dom.minidom import parse, parseString
 import sys
 from math import ceil
@@ -55,7 +56,10 @@ if len(argv) == 1:
     os.system('clear')
     print "Please wait.."
     try:
-        livematches,livematches1 = urllib2.urlopen("http://synd.cricbuzz.com/j2me/1.0/livematches.xml"),urllib2.urlopen("http://synd.cricbuzz.com/j2me/1.0/livematches.xml")
+        site = "http://synd.cricbuzz.com/j2me/1.0/livematches.xml"
+        hdr = {'User-Agent':'Mozilla/5.0'}
+        req = urllib2.Request(site,headers=hdr)
+        livematches,livematches1 = urllib2.urlopen(req),urllib2.urlopen(req)
     except Exception:
         ConnectionIssue()
     if "<html" in livematches.read():
@@ -83,7 +87,10 @@ if len(argv) == 1:
         os.system('clear')
         print "Please wait.."
         try:
-            commentary,commentary1 = urllib2.urlopen(match_link_com),urllib2.urlopen(match_link_com)
+            site1 = match_link_com
+            hdr1 = {'User-Agent':'Mozilla/5.0'}
+            req1 = urllib2.Request(site1,headers=hdr1)
+            commentary,commentary1 = urllib2.urlopen(req1),urllib2.urlopen(req1)
         except Exception:
             ConnectionIssue()
         if "<html" in commentary.read():
@@ -130,7 +137,10 @@ if len(argv) > 1:
     else:
         match_link_com = argv[1] + "commentary.xml"
         try:
-            commentary,commentary1 = urllib2.urlopen(match_link_com),urllib2.urlopen(match_link_com)
+            site1 = match_link_com
+            hdr1 = {'User-Agent':'Mozilla/5.0'}
+            req1 = urllib2.Request(site1,headers=hdr1)
+            commentary,commentary1 = urllib2.urlopen(req1),urllib2.urlopen(req1)
         except Exception:
             notify(False, "Something went wrong!", "CricLiveNotifier Turned Off", "Check your Internet Connection", "http://github.com/hasgar/CricLiveNotifier", sound=True)
             StopCricLive(True)
