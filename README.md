@@ -8,9 +8,9 @@ NOTE: The standalone app should run without installing any dependencies.
 
 
 Live Cricket Score Notification for MAC OS users<br /><br />
-![img](http://i.imgur.com/5CzGRdh.png)<br />
-![img](http://i.imgur.com/X0SZxLa.png)<br />
-![img](http://i.imgur.com/WAVBDB2.png)<br />
+![img](http://i.imgur.com/LAxL7kI.png)<br />
+![img](http://i.imgur.com/hYfzda9.png)<br />
+![img](http://i.imgur.com/7b1dOvp.png)<br />
   - Over by Over Updates
   - Boundary Updates
   - Wicket Updates
