@@ -2,11 +2,24 @@
 
 # MAC
 Mac User can download the zip file which has standalone app. To run the app download it and run it via terminal: <br /><br />
-./CricketNotifier.app/Contents/MacOS/CricketNotifier <br /><br />
 
-To stop:<br /><br />
+<h3>How to Use:</h3>
+```sh
+$ ./CricketNotifier.app/Contents/MacOS/CricketNotifier
+$ 1: RSA vs ENG - 4th Test
+$ 2: IND vs AUS - 4th ODI
+$ Select your Match by Entering the Number > 1
+$ Notification with sound (Y/N) > y
+$ Auto Close Notification after seconds( 0 - 15 && manual close - 0) > 0
+$ Done. Enjoy the match with Cricket Notifier :)
+```
 
-./CricketNotifier.app/Contents/MacOS/CricketNotifier stop<br /><br />
+<br /><br />
+To stop:
+
+```sh
+./CricketNotifier.app/Contents/MacOS/CricketNotifier stop
+```
 
 NOTE: The standalone app should run without installing any dependencies.<br /><br />
 
@@ -40,7 +53,7 @@ Live Cricket Score Notification for MAC OS users<br /><br />
 * mplayer : If you need sound with your Linux Notification you'll have to install mplayer as the dependecy. In fedora it can be done with "sudo dnf install mplayer"
 
 
-# How to Use:
+<h3> How to run on Linux</h3>
 Start
 ```sh
 $ python CricLiveNotifier.py
