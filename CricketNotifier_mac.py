@@ -29,7 +29,7 @@ def notify(clear, title, subtitle, info_text, url, delay=0, sound=False, userInf
     notification.setInformativeText_(info_text)
     notification.setHasActionButton_(True)
     notification.setActionButtonTitle_("View")
-    notification.setUserInfo_({"action":"open_url", "value":url})
+    #notification.setUserInfo_({"action":"open_url", "value":url})
     if sound:
         notification.setSoundName_("NSUserNotificationDefaultSoundName")
     notification.setDeliveryDate_(Foundation.NSDate.dateWithTimeInterval_sinceDate_(delay, Foundation.NSDate.date()))
