@@ -1,12 +1,16 @@
 # CricLiveNotifier
 
+# MAC
 Mac User can download the zip file which has standalone app. To run the app download it and run it via terminal: <br /><br />
 ./CricketNotifier.app/Contents/MacOS/CricketNotifier <br /><br />
 
+To stop:<br /><br />
 
-NOTE: The standalone app should run without installing any dependencies.
+./CricketNotifier.app/Contents/MacOS/CricketNotifier stop<br /><br />
 
+NOTE: The standalone app should run without installing any dependencies.<br /><br />
 
+<br /><br />
 Live Cricket Score Notification for MAC OS users<br /><br />
 ![img](http://i.imgur.com/LAxL7kI.png)<br />
 ![img](http://i.imgur.com/hYfzda9.png)<br />
@@ -20,10 +24,21 @@ Live Cricket Score Notification for MAC OS users<br /><br />
 
 # Requirements:
 
+<h3>For MAC: If running the python script not the App</h3>
+
 * [Beautiful Soup] - Python library for pulling data out of HTML and XML files.
 * [lxml] - XML and HTML Parser for Python
 * [python-crontab] - Crontab module for read and writing crontab files
 * For better performance change Python Notification as 'Alerts' (after first run) at System preferences > Notifications > Python > Alerts
+
+<h3>For Linux:</h3>
+
+* [Beautiful Soup] - Python library for pulling data out of HTML and XML files.
+* [lxml] - XML and HTML Parser for Python
+* [python-crontab] - Crontab module for read and writing crontab files
+* pynotify : Install it using "pip install pynotify"
+* mplayer : If you need sound with your Linux Notification you'll have to install mplayer as the dependecy. In fedora it can be done with "sudo dnf install mplayer"
+
 
 # How to Use:
 Start
