@@ -50,7 +50,7 @@ Live Cricket Score Notification for MAC OS users<br /><br />
 * [lxml] - XML and HTML Parser for Python
 * [python-crontab] - Crontab module for read and writing crontab files
 * pynotify : Install it using "pip install pynotify"
-* mplayer : If you need sound with your Linux Notification you'll have to install mplayer as the dependecy. In fedora it can be done with "sudo dnf install mplayer"
+* mplayer : If you need sound with your Linux Notification you'll have to install mplayer as the dependecy. In fedora it can be done with "sudo dnf install mplayer" and "sudo apt-get install mplayer" in debian based distros like Ubuntu and Linux Mint.
 
 <br /><br /><br /><br />
 <h2> How to run on Linux</h2>
