@@ -52,7 +52,7 @@ if len(argv) == 1:
         ConnectionIssue()
     if "<html" in livematches:
         ConnectionIssue()
-    soup = bsoup(livematches1.content, "lxml")
+    soup = bsoup(livematches1.content, "xml")
     match_list = {}
     os.system('clear')
     sp_status = ""
@@ -81,7 +81,7 @@ if len(argv) == 1:
             ConnectionIssue()
         if "<html" in commentary:
             ConnectionIssue()
-	soup = bsoup(commentary1.content, "lxml")
+	soup = bsoup(commentary1.content, "xml")
         bat_tm_id,last_ball,last_over,wickets,runs = 0,0.0,0,0,0
         #Pulling selected match for first notification after setup
         for btId in soup.findAll('btTm'):
@@ -133,7 +133,7 @@ if len(argv) > 1:
 	    sendmessage("Something went wrong!", "Cricket Notifier Turned Off", "Check your Internet Connection")
             StopCricLive(True)
         #Pulling Updated match data for updates
-	soup = bsoup(commentary1.content, "lxml")
+	soup = bsoup(commentary1.content, "xml")
         for sts in soup.findAll('state'):
             if sts.get('mchState') != 'inprogress':
                 sys.exit(0)
